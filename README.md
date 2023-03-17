@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+# Software Studio 2022 Spring Midterm Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Scoring
 
-## Available Scripts
+| **Basic components**                             | **Score** | **Check** |
+| :----------------------------------------------- | :-------: | :-------: |
+| Membership Mechanism                             | 15%       | Y         |
+| Firebase page                                    | 5%        | Y         |
+| Database read/write                              | 15%       | Y         |
+| RWD                                              | 15%       | Y         |
+| Chatroom                                         | 20%       | Y         |
 
-In the project directory, you can run:
+| **Advanced tools**                               | **Score** | **Check** |
+| :----------------------------------------------- | :-------: | :-------: |
+| Using React                                      | 10%       | Y         |
+| Third-Party Sign In                              | 1%        | Y         |
+| Notification                                     | 5%        | Y         |
+| CSS Animation                                    | 2%        | Y         |
+| Security                                         | 2%        | Y         |
 
-### `npm start`
+| **Other useful functions**                         | **Score** | **Check** |
+| :----------------------------------------------- | :-------: | :-------: |
+| Name of functions                                  | 1~10%     |         |
+|User profile                              | 1%        | Y         |
+| Unsend message                                          | 3%        | Y         |
+    
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+### How to use 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    Describe how to use your web and maybe insert images or gifs to help you explain.D
 
-### `npm run build`
+![](https://i.imgur.com/UoaAAE8.png)![](https://i.imgur.com/9ASj6xJ.png)![](https://i.imgur.com/SZr42GP.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+預設會進入login頁面，點選signup辦帳號，或是使用已有帳號或是google帳號登入。
+登入後進入聊天室，預設聊天室是public，public提供給所有人讀寫。也可以點creatroom創建聊天室，創建後會直接進入創建的聊天室，聊天室是私人的，只有裡面的成員能用email新增其他使用者。
+有RWD,能及時讀訊息，有使用react，google登入，css會動，chrome notification，點訊息旁的Delete扭能夠刪除自己任何傳送過的訊息，讀取現在使用者的名稱(User profile)。
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+輸入時按enter能夠傳送訊息或是登入。跑訊息時會自動滑動滾輪。
+### Function description
+![](https://i.imgur.com/gOQYhzA.png)
 
-### `npm run eject`
+    Describe your bonus function and how to use it.
+藉由react製作跳轉頁面，讀寫訊息。
+邀請成員，邀請時發生錯誤，創建房間發生錯誤，時會有chrome notification跳出。
+在私人房間時會用database判斷房間內是否有該成員來給予讀寫權限。
+紀錄push訊息時所產生的key以尋找自己傳送過的訊息，藉由將訊息的值改為空字串來刪除訊息因為讀取時會跳過空字串，不刪除是因為想留下寫過的紀錄。
+RWD主要是使用flex相關。
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Firebase page link
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+    Your web page URL
+https://midturn-4f613.web.app/
+### Others (Optional)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+    Anything you want to say to TAs.
+你好。
+<style>
+table th{
+    width: 100%;
+}
+</style>

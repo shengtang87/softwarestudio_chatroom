@@ -1,0 +1,30 @@
+{
+  "rules": {
+      ".read": "false",
+      ".write": "false",
+    "root":{     
+      "roomcnt":{
+        ".read":"true",
+        ".write":"true",
+      },
+      "user":{
+        "$uid":{
+          ".read":"$uid===auth.uid",
+          ".write":"$uid===auth.uid",            
+        }
+      },        
+      "$room":{
+        ".read":"data.child(auth.uid).exists()",
+        ".write":"data.child(auth.uid).exists()",     
+        "$uid":{         	
+          ".read":"$uid===auth.uid",
+          ".write":"$uid===auth.uid",   
+        } 
+      },
+      "roomPublic":{
+        ".read":"true",
+        ".write":"true"     
+      }
+    }
+  }
+}
